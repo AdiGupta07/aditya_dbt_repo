@@ -1,0 +1,3 @@
+{{ positive_values(
+    ref('src_hosts'),'host_id')
+}}

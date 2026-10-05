@@ -1,0 +1,35 @@
+models:
+ 
+  - name: src_hosts
+    description: "{{doc('model1')}}"
+    columns: 
+      - name: host_id
+        description:  "{{doc('col1')}}"
+      - name: host_name
+        description: "This represents the host name."
+      - name: is_superhost
+        description: "This represents if the host is a superhost."
+      - name: created_at
+      - name: updated_at
+ 
+  - name: src_listings
+    description: "{{doc('model2')}}"
+    columns: 
+      - name: listing_id
+        description: "This represents the listing id."
+      - name: listing_url
+        description: "This represents the listing url."
+      - name: listing_name
+        description: "This represents the listing name."
+      - name: created_at
+      - name: updated_at
+ 
+  - name: src_reviews
+    description: "{{doc('model3')}}"
+    columns: 
+      - name: listing_id
+        description: "This represents the listing id."
+      - name: review_date
+        description: "This represents the review date."
+      - name: reviewer_name
+        description: "This represents the reviewer name."
